@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="200" height="200">
-  <rect width="64" height="64" rx="8" fill="#f7efe2"/>
-  <g fill="#8b5e3c">
-    <path d="M22 34c0-6 10-10 10-14s-4-6-6-6c-4 0-8 6-8 12s4 8 4 8z"/>
-    <ellipse cx="34" cy="40" rx="18" ry="6" fill="#c97b5b"/>
-  </g>
-</svg>

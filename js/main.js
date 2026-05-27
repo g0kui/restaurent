@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initMenuFilter();
   initMagneticButtons();
   initForms();
+  initDashboardUser();
 });
 
 function initScrollReveal() {
@@ -156,5 +157,32 @@ function initForms() {
         }, 1000);
       }, 1200);
     });
+  });
+}
+
+function initDashboardUser() {
+  const raw = localStorage.getItem('dashboardUserEmail');
+  if (!raw) return;
+
+  const localPart = raw.split('@')[0] || raw;
+  const displayName = localPart
+    .replace(/[._]/g, ' ')
+    .split(' ')
+    .filter(Boolean)
+    .map((part) => part[0]?.toUpperCase() + part.slice(1))
+    .join(' ');
+  const initials = displayName
+    .split(' ')
+    .filter(Boolean)
+    .map((part) => part[0])
+    .join('')
+    .slice(0, 2)
+    .toUpperCase();
+
+  document.querySelectorAll('.dashboard-topbar .user-name').forEach((el) => {
+    el.textContent = displayName || 'Guest';
+  });
+  document.querySelectorAll('.dashboard-topbar .avatar').forEach((el) => {
+    el.textContent = initials || 'U';
   });
 }
