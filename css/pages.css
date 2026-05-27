@@ -134,7 +134,15 @@
   display: block;
 }
 
-.team-card .team-img img,
+.team-card .team-img img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 0 !important;
+}
+
 .gallery-item img,
 .hero-plate img,
 .img-zoom-wrap img {
