@@ -398,6 +398,18 @@
   transition: border-color var(--transition);
 }
 
+.contact-form select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+
+.contact-form option {
+  color: var(--dark);
+  background: var(--white);
+}
+
 .contact-form input:focus,
 .contact-form textarea:focus {
   border-color: var(--primary);
