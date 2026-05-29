@@ -25,7 +25,7 @@ function renderNav() {
 
   header.innerHTML = `
     <div class="nav-inner">
-      <a href="index.html" class="logo"><img src="images/logo.png" alt="Stackly logo"><span>Stackly</span></a>
+      <a href="index.html" class="logo"><img src="images/logo.webp" alt="Stackly logo"><span>Stackly</span></a>
       <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
@@ -59,7 +59,7 @@ function renderFooter() {
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="index.html" class="logo"><img src="images/logo.png" alt="Stackly logo"><span>Stackly</span></a>
+          <a href="index.html" class="logo"><img src="images/logo.webp" alt="Stackly logo"><span>Stackly</span></a>
           <p>Premium dining experience crafted with passion. Taste the art of fine cuisine at Stackly Restaurant.</p>
           <div class="social-links" style="margin-top:1.25rem">
             <a href="404.html" aria-label="Facebook">f</a>
